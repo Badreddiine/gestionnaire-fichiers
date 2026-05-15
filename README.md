@@ -37,3 +37,17 @@ Exemples
 ./mon_ls -la
 ./mon_ls -lh /var/log
 ./mon_ls -alh .
+gcc mkdir.c -o mon_mkdir
+gcc rmdir.c -o mon_rmdir
+2. Tester mkdir
+bash# Créer un dossier simple
+./mon_mkdir test
+
+# Créer des dossiers imbriqués avec -p
+./mon_mkdir -p a/b/c
+3. Tester rmdir
+bash# Supprimer un dossier vide
+./mon_rmdir test
+
+# Supprimer des dossiers imbriqués avec -p (feuille → racine)
+./mon_rmdir -p a/b/c
