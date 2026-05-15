@@ -51,3 +51,7 @@ bash# Supprimer un dossier vide
 
 # Supprimer des dossiers imbriqués avec -p (feuille → racine)
 ./mon_rmdir -p a/b/c
+chmod +x lancer_tout.sh
+
+# Lancer
+./lancer_tout.sh
