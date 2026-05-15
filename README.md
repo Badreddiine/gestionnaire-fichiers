@@ -27,3 +27,13 @@ cgroup [chemin_fichier] [groupe]
 cowner [chemin_fichier] [utilisateur]
 suprimer [chemin_fichier]
 ```
+## ls
+Compiler
+gcc ls.c -o mon_ls
+Exemples
+./mon_ls
+./mon_ls /etc
+./mon_ls -l
+./mon_ls -la
+./mon_ls -lh /var/log
+./mon_ls -alh .
